@@ -1,0 +1,98 @@
+
+/* Page Styles
+================================ */
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font: normal 1em/1.5 sans-serif;
+	color: #222;
+	background-color: #edeff0;
+}
+img {
+	border: solid 1px;
+	padding: 5px;
+}
+
+/* Main Layout Styles
+================================ */
+
+.main-header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #384047; 
+}
+.main-logo {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.5em;
+}
+.main-logo a, 
+.main-nav a {
+	display: block;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+.main-logo a { 
+	background-color: #5fcf80; 
+}
+.main-nav a { 
+	background-color: #3f8abf; 
+}
+.main-footer {
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+ 	background-color: #b7c0c7;
+}
+
+@media (min-width: 768px) { 
+
+	/* Main Layout Styles
+	================================ */
+
+	body {
+		padding-top: 75px;
+	}
+	.main-header {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	.main-nav {
+		text-align: right;
+	}
+	.main-nav li {
+		margin-top: 6px;
+		margin-left: 10px;
+		display: inline-block;
+	}
+	.main-banner {
+		background: #dfe2e4;
+		text-align: center;
+		padding: 50px 15px;
+		margin-bottom: 20px;
+	}
+
+	/* Imagery
+	================================ */
+
+	.feat-img {
+		width: 45%;
+		float: left;
+		margin: 5px 20px 10px 0;
+	}
+
+}
+
+@media (min-width: 1px) and (max-width: 767px)  {
+	.main-nav li {
+		margin-top: 12px;
+	}
+}
